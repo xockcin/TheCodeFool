@@ -18,3 +18,5 @@ I was able to accomplish most of what I wanted with Bootstrap alone, but React w
 - Five of them, one for each menu option plus a splash modal that appears on pageload.
 
 There will be more, of course, but I will hold off on enumerating them until I have drawn up a more detailed plan of what I want my Portfolio and Blog modals to look like.
+
+See the original website [here](https://xockcin.github.io/whytarot)
