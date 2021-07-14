@@ -1,0 +1,21 @@
+body {
+    font-family: 'Averia Serif Libre', cursive;
+    background: url(https://crookedcrows.com/wp-content/uploads/2020/02/RW-CARD-BACK--600x1036.jpg);
+    /* background-color:rgb(58, 154, 228); */
+}
+
+#slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgba(72, 214, 51, 0.8);
+  color:black;
+  margin: auto;
+}
+
+#slogan:hover {
+  background-color:rgba(243, 0, 0, 0.9);
+  color:yellow;
+  cursor: pointer;
+}

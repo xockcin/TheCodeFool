@@ -1,0 +1,20 @@
+
+footer > a:hover {
+  color: red;
+}
+
+header, footer {
+  background-color: yellow;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+footer {
+  bottom: 0;
+}
+
+header {
+  top: 0
+}
