@@ -5,6 +5,9 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
+import Card from 'react-bootstrap/Card'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import image from './assets/thefool2.png'
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -45,7 +48,6 @@ function App() {
 
   return (
     <Frame>
-
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Body>
           <Container>
@@ -65,6 +67,23 @@ function App() {
           </Container>
         </Modal.Body>
       </Modal>
+
+      <Container id="menu">
+        <Row>
+          <Col md={6} className="menu-btn bg-primary">
+            <h2>portfolio</h2>
+          </Col>
+          <Col md={6} className="menu-btn bg-warning">
+            <h2>blog</h2>
+          </Col>
+          <Col md={6} className="menu-btn bg-success">
+            <h2>about</h2>
+          </Col>
+          <Col md={6} className="menu-btn bg-danger">
+            <h2>contact</h2>
+          </Col>
+        </Row>
+      </Container>
     </Frame>
   );
 

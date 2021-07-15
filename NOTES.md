@@ -55,3 +55,7 @@ Okay, this is hard and it's late. I should stop looking at screens. I'll call it
 The splash screen in version one is perfect. My goal right now should be to create it using React Bootstrap.
 
 Okay, the modal now works how I want it to work. The spacing is good and so is the responsiveness. I still need to fix the colors and the font but I can do that later.
+
+So the modal appears on pageload and hides when I click the slogan. So far so good.
+
+Next up is to make the menu. Here goes.

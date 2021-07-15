@@ -21,3 +21,26 @@ body {
   color:yellow;
   cursor: pointer;
 }
+
+.menu-btn {
+  height: 80px;
+  text-align: center;
+}
+.menu-btn > h2 {
+  font-size: 35px;
+}
+
+@media (min-width: 768px) {
+  .menu-btn {
+    height: 155px;
+  }
+  .menu-btn > h2 {
+    font-size: 60px;
+  }
+}
+
+#menu {
+  margin-top: 150px;
+  max-width: 80%;
+}
+
