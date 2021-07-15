@@ -33,3 +33,25 @@ It's all HTML! Woof. I do not miss those days.
 It is a single-page app, which is nice. Even before I learned React, I still knew instinctively that SPA is the way to go. But the code is just excruciating to look at. I'm never going back.
 
 I think I should start with the header and footer. Here we go.
+
+That's done. It doesn't look right yet but that's okay. I'll need to bring in Google fonts to get the font I want, but I can do that later. The next thing I should work on is the splash modal. I will study how MS uses CSS modules to implement his modal in his class example website.
+
+I will just completely straight-up steal his implementation because I like it.
+
+Now I have it. The next challenge is to get my modal to look the way I want it to look.
+
+Now I have a modal that works. It's not the right modal, but it's a modal. Nice start!
+
+This app is a background that is always the same, and a foreground that can be one of three different things: A splash modal, a content modal, or a menu. There is only one menu and only one splash modal. There are several different types of content modals. For now I should focus on the splash modal and the menu.
+
+Okay, I changed my mind. I actually want to use Bootstrap, specifically React Bootstrap. I have two main grievances with Bootstrap. The first one, which is major, is that it's a crutch. It is for me, at least, because I learned it before I really knew CSS. The second, which is more minor, is that doing all your styling with big fat lists of classes makes for sloppy and ugly code.
+
+Of those two, the first one is what it is: I still don't really know CSS, and that's okay. If I can get what I need to do done with React Bootstrap, then so be it. As for the second one, it's actually much less of a problem with React Bootstrap, because the styling is implemented as props instead of classes. Let's try it out.
+
+Okay, this is hard and it's late. I should stop looking at screens. I'll call it a night.
+
+# 7/15/21
+
+The splash screen in version one is perfect. My goal right now should be to create it using React Bootstrap.
+
+Okay, the modal now works how I want it to work. The spacing is good and so is the responsiveness. I still need to fix the colors and the font but I can do that later.
