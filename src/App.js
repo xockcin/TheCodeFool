@@ -8,7 +8,7 @@ import Image from 'react-bootstrap/Image'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import image from './assets/thefool2.png'
+import splashImage from './assets/thefool2.png'
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -20,24 +20,29 @@ const Menu = () => {
 
 const Splash = (props) => {
   return (
-    <>
-      <Modal show={true}>
-        <Modal.Header>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={props.showMenu}>
-            Close
-          </Button>
-          <Button variant="primary">
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </>
+    <Modal show={props.show} onHide={props.hide} id="splash">
+      <Modal.Body>
+        <Container>
+          <Image src={splashImage} fluid rounded />
+          <div id="slogan" onClick={props.hide}>
+            <h5>
+              <strong>
+                "If the fool would persist in his folly he would become wise."
+              </strong>
+              <cite>
+                <div>
+                  <h6>-William Blake</h6>
+                </div>
+              </cite>
+            </h5>
+          </div>
+        </Container>
+      </Modal.Body>
+    </Modal>
   );
 }
+
+
 
 function App() {
   const [showModal, setShowModal] = useState(true);
@@ -48,25 +53,7 @@ function App() {
 
   return (
     <Frame>
-      <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Body>
-          <Container>
-            <Image src={image} fluid rounded />
-            <div id="slogan" onClick={handleCloseModal}>
-              <h5>
-                <strong>
-                  "If the fool would persist in his folly he would become wise."
-                </strong>
-                <cite>
-                  <div>
-                    <h6>-William Blake</h6>
-                  </div>
-                </cite>
-              </h5>
-            </div>
-          </Container>
-        </Modal.Body>
-      </Modal>
+      <Splash show={showModal} hide={handleCloseModal} />
 
       <Container id="menu">
         <Row>
