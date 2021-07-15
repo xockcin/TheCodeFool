@@ -4,6 +4,10 @@ body {
     /* background-color:rgb(58, 154, 228); */
 }
 
+#splash {
+  margin-top: 70px;
+}
+
 #slogan {
   position: absolute;
   top: 50%;
@@ -43,4 +47,3 @@ body {
   margin-top: 150px;
   max-width: 80%;
 }
-
